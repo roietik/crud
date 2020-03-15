@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:400,900&display=swap");
+.App {
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: "Lato", sans-serif;
+
+  .add {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid gray;
+    border-bottom: none;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+    &__title {
+      padding: 20px;
+    }
+
+    &__button {
+      background-color: #4caf50;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+  .update {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid gray;
+    border-bottom: none;
+
+    &__title {
+      padding: 20px;
+    }
+
+    &__button {
+      background-color: #3c56b7;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+  .delete {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid gray;
+    border-bottom: none;
+
+    &__title {
+      padding: 20px;
+    }
+
+    &__button {
+      background-color: #b73c3c;
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  }
+  .employee {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: left;
+    border: 1px solid gray;
+    border-bottom: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    &:first-child {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+    &:last-child {
+      border-bottom: 1px solid gray;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+    }
+    &:hover {
+      background-color: lightgrey;
+    }
+    &:nth-child(odd) {
+      background: white;
+    }
+    &:nth-child(even) {
+      background: #e0e0e0;
+    }
+  }
+}
